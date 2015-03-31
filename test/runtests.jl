@@ -1,3 +1,3 @@
 using QuadProg
 
-QuadProg.ok()
+include("test-null-space.jl")
