@@ -1,5 +1,7 @@
 module QuadProg
 
+using Compat
+
 function solve (G::Matrix, g::Vector, A::Matrix, Delta::Float64;
     null_matrix = false, ortho_null = false, eps = 1e-8, kmax = 1000)
   if null_matrix
