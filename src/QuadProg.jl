@@ -58,7 +58,7 @@ function solve (G::Matrix, g::Vector, A::Matrix, Delta::Float64;
     p = Z*t + beta*p
     k += 1
   end
-  return u, k
+  return u, q(u), k
 end
 
 end
